@@ -19,7 +19,7 @@ else:
     print("\n...Tch. Lucky guess. I guess I'll let you see your 'savings.'")
     
     while True:
-        if random() < 0.20 and money > 0:
+        if random() < 0.20 and money > 50:
             robbery = 50
             money -= robbery
             print(f"\n(Note: ${robbery} disappeared for 'administrative expenses.' Don't ask.)")
