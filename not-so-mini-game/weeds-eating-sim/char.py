@@ -1,8 +1,6 @@
 from random import random
 import sys
 
-chance = random.random()
-
 class Character:
     def __init__(self, name, hp, stamina, cool, debt, money):
         self.name = name
@@ -15,6 +13,8 @@ class Character:
 
     def eat_weeds(self, amount):
         MAX_HP = 100
+
+        chance = random()
         
         if chance < 0.1:
             self.hp -= amount
@@ -31,6 +31,7 @@ class Character:
             print(f"{self.name} is munching on the lawn again. It's an organic, grass-fed lifestyle. +{amount} HP.")
     
     def rest(self, amount):
+        chance = random()
         if chance < 0.05:
             self.stamina = min(100, self.stamina + amount)
             self.cool = max(0, self.cool - amount)
@@ -67,3 +68,27 @@ class Character:
 
         else:
             print(f"{self.name}: Nijika won't even look me in the eye anymore. Time to go eat more weeds.")
+
+    def find_job(self, amount):
+        if self.stamina < 20:
+            print(f"{self.name} is too hungry to even hold a bass. Go eat some weeds.")
+            return
+
+        job_chance = random()
+
+        if self.cool > 50 and job_chance > 0.3:
+            earnings = amount * 2
+            self.money += earnings
+            self.stamina -= 15
+            print(f"{self.name} got a session gig! Her bass lines were impeccable. +{earnings} Yen, -15 STAMINA.")
+        
+        elif job_chance > 0.5:
+            self.money += amount
+            self.stamina -= 10
+            self.cool -= 5
+            print(f"{self.name} worked a shift at STARRY. Nijika made her wear an apron. +{amount} Yen, -10 STAMINA, -5 COOL.")
+        
+        else:
+            self.stamina -= 5
+            print(f"{self.name} spent all day looking for a 'creative' job and found nothing. -5 STAMINA.")
+        
