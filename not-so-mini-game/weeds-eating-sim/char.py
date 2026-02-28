@@ -90,5 +90,4 @@ class Character:
         
         else:
             self.stamina -= 5
-            print(f"{self.name} spent all day looking for a 'creative' job and found nothing. -5 STAMINA.")
-        
+            print(f"{self.name} spent all day looking for a 'Creative' job and found nothing. -5 STAMINA.")
