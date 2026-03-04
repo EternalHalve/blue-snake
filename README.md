@@ -1,4 +1,4 @@
-# Fun-101: Python Learning Repository
+# Python Learning Repository
 
 A collection of mini-games and data structure explorations created to track learning progress in Python programming.
 
@@ -19,10 +19,10 @@ A collection of mini-games and data structure explorations created to track lear
 - **Weeds Eating Simulator** - A character survival game where you manage stats (HP, Stamina, Cool, Money) while paying off debt
   - Features: Character class system, random events, multiple gameplay options
   - Goal: Survive, manage finances, and maintain your cool factor
+- **Kesshoku-Fight!** – A terminal-based combat simulator where members of the band face off in turn-based tactical duels
+  - Features: Object-Oriented character system, dynamic damage/defense calculations, and 20% critical hit mechanics.
+  - Goal: Select your favorite band member, survive the exchange of attacks, and be the last musician standing.
+
 
 ### Data Structures (`data-structures/`)
 - **Lists** - Comprehensive examples of Python list operations including creation, adding, deleting, sorting, and common pitfalls
-
-## Learning Journey
-
-This repository documents a personal Python learning path—from simple interactive games to more complex projects with OOP concepts and event systems.
