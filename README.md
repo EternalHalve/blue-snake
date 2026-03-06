@@ -12,6 +12,7 @@ A collection of mini-games and data structure explorations created to track lear
 - **Ryo ATM** - A humorous ATM simulator where you guess a PIN (1-5) to access funds
 - **Social Anxiety** - A character stat management game where you balance social battery, willpower, shame, and money while navigating social situations with different coping mechanisms
 - **Running from Debt** - An escape-themed game where Ryo flees from Nijika while trying to earn money and pay off mounting debt (with interest!)
+- **Mental Breakdown** - A Python-based CLI tool that fetches real-time lyrics using the Genius API and displays them with a synchronized typewriter animation effect. Securely managed with environment variables.
 
 ### Not-So-Mini Game (`not-so-mini-game/`)
 **A more advanced text-based simulation game:**
